@@ -12,11 +12,13 @@
       width: 100vw;
       height: 100vh;
       border: none;
+      margin: 0;
+      padding: 0;
     }
   </style>
 </head>
 <body>
-  <iframe src="https://drive.google.com/file/d/14KN6XmMYgRwMJApyMrhexDrOz-eI7RNn/preview?zoom=2"" allowfullscreen></iframe>
+  <iframe src="https://drive.google.com/file/d/14KN6XmMYgRwMJApyMrhexDrOz-eI7RNn/preview?zoom=2" allowfullscreen></iframe>
   <script>
     document.querySelector('iframe').addEventListener('load', function () {
       this.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
